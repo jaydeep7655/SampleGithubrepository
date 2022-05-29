@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SampleGithubrepository</string>
+    <string name="home_title">Github Trends</string>
+    <string name="no_record">No Record Found</string>
+    <string name="name_">Name - </string>
+    <string name="desc">Desc - </string>
+    <string name="title_activity_repo_detail">RepoDetailActivity</string>
+    <string name="stars">Stars</string>
+    <string name="forks">" Forks"</string>
+    <string name="search">Search</string>
+</resources>
