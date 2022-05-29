@@ -104,13 +104,13 @@ dependencies {
     androidTestImplementation "androidx.test:rules:$testx_rules"
     androidTestImplementation "android.arch.core:core-testing:$android_arch_core_testing"
     androidTestImplementation "com.squareup.okhttp3:mockwebserver:$mockwebserver_version"
-    androidTestImplementation "org.koin:koin-test:$koin_version"
+
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_contrib"
 
     testImplementation "androidx.test.ext:junit:$junit_x_ext"
     testImplementation "android.arch.core:core-testing:$android_arch_core_testing"
     testImplementation "com.squareup.okhttp3:mockwebserver:$mockwebserver_version"
-    testImplementation "org.koin:koin-test:$koin_version"
+    testImplementation "io.insert-koin:koin-test-junit4:$koin_version"
     testImplementation "io.mockk:mockk:$mockk_version"
 
 
