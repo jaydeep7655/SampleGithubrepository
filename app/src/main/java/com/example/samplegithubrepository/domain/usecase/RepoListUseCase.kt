@@ -13,11 +13,11 @@ import java.io.IOException
 import java.net.UnknownHostException
 
 class RepoListUseCase constructor(private val repository: RepoListRepository) {
-    operator fun invoke(): Flow<Resource<ArrayList<RepoListItem>>> = flow {
+    operator fun invoke(): Flow<Resource<List<RepoListItem>>> = flow {
         try {
             emit(Resource.Loading())
             val response = repository.getRepoList()
-            emit(Resource.Success(data = response as ArrayList<RepoListItem>))
+            emit(Resource.Success(data = response as List<RepoListItem>))
         } catch (e: HttpException) {
             emit(Resource.Error(traceErrorException(e)))
         }catch (e: UnknownHostException){
@@ -27,5 +27,5 @@ class RepoListUseCase constructor(private val repository: RepoListRepository) {
         } catch (e: Exception) {
             emit(Resource.Error(traceErrorException(e)))
         }
-    }.flowOn(Dispatchers.IO)
+    }
 }

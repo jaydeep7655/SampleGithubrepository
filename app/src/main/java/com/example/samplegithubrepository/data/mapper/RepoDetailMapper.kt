@@ -19,7 +19,7 @@ fun RepoDetailDTO.toDomain(): RepoDetail {
         open_issues_count = openIssuesCount?:0,
         owner =  ownerDTO?.toDomain()?:Owner("","") ,
         subscribers_count = subscribersCount?:0,
-        topics = arrayListOf(),
+        topics = (topics?: ArrayList<String>()) as List<String>,
         watchers = watchers?:0,
         watchers_count = watchersCount?:0,
         description = description?:""

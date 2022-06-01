@@ -2,9 +2,6 @@ package com.example.samplegithubrepository.di
 
 import com.example.samplegithubrepository.BuildConfig
 import com.example.samplegithubrepository.data.remote.ApiService
-import com.example.samplegithubrepository.data.repository.RepoListRepositoryImpl
-import com.example.samplegithubrepository.domain.repository.RepoListRepository
-import com.example.samplegithubrepository.domain.usecase.RepoListUseCase
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module

@@ -30,5 +30,5 @@ class RepoDetailUseCase constructor(private val repository: RepoDetailRepository
             emit(Resource.Error(traceErrorException(e)))
         }
 
-    }.flowOn(Dispatchers.IO)
+    }
 }

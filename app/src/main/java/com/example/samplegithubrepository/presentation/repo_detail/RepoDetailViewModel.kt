@@ -39,7 +39,7 @@ class RepoDetailViewModel constructor(
     val repoDetail: StateFlow<GitRepoDetailState>
         get() = _repoDetail
 
-    fun getRepoDetail() {
+     fun getRepoDetail() {
         repoDetailUseCase(full_name.value).onEach {
             when (it) {
                 is Resource.Loading -> {
@@ -56,7 +56,7 @@ class RepoDetailViewModel constructor(
         }.launchIn(viewModelScope)
     }
 
-    private fun setData(data: RepoDetail?) {
+     fun setData(data: RepoDetail?) {
 
         data?.let {
             mForks.value = it.forks
